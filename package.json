@@ -1,0 +1,26 @@
+{
+  "name": "belajar",
+  "version": "1.0.0",
+  "description": "<h4>Installation</h4> - NPM Install",
+  "main": "app.js",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nurfiitriiyah/belajar_M1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nurfiitriiyah/belajar_M1/issues"
+  },
+  "homepage": "https://github.com/nurfiitriiyah/belajar_M1#readme"
+}
