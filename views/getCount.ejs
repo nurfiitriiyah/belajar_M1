@@ -1,0 +1,39 @@
+<html>
+<head>
+</head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<body>
+<table>
+    <tr class="ok">
+        <td>Harga : <input name="harga" placeholder="harga"/></td>
+        <td>Item : <input name="item" placeholder="item"/></td>
+        <td>Total :<input name="total" placeholder="total"/></td>
+    </tr>
+    <tr class="ok">
+        <td>Harga : <input name="harga" placeholder="harga"/></td>
+        <td>Item : <input name="item" placeholder="item"/></td>
+        <td>Total :<input name="total" placeholder="total"/></td>
+    </tr>
+</table>
+</body>
+</html>
+
+<script>
+    $(document).ready(function () {
+        onKeyUpsItem()
+    })
+
+    function onKeyUpsItem() {
+        //jika ada perubahan di input yang memliki name berupa `item`
+        $("input[name=item]").change(function () {
+            //get val dari input dengan tag name item
+            let elItem = ($(this).val());
+            //get input dengan tag name harga yg memiliki parent class ok
+            var elHarga = $(this).parents('.ok').find('input[name=harga]');
+            //get input dengan tag name total yg memiliki parent class ok
+            var elTotal = $(this).parents('.ok').find('input[name=total]');
+            //next elTotal yg merupakan tagname total selanjutnya akan diberikan value berupa elItem * elharga
+            elTotal.val(elItem * elHarga.val());
+        });
+    }
+</script>
